@@ -5,7 +5,30 @@
 }
 body{
     background: #4D2E7F;
+    --sb-track-color: #b79de1;
+    --sb-thumb-color: #4d2e7f;
+    --sb-size: 15px;
 }
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
 header{
     width: 100%;
     padding: 2fr 12%;
@@ -67,4 +90,34 @@ nav a:nth-child(4):hover~span{
     border-radius: 10px;
     margin-right: 325px;
     margin-left: 325px;
+}
+.Pagina{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.Mapa_Geral{
+    grid-area: 1 / 1 / 6 / 4;
+    position: relative; 
+    width: 600px;
+    height: 500px;
+    background: #fff;
+    box-shadow:
+    2px 2px 3.6px rgba(0, 0, 0, 0.048),
+    8.1px 7.9px 10px rgba(0, 0, 0, 0.069),
+    25.2px 24.5px 24.1px rgba(0, 0, 0, 0.103),
+    103px 100px 80px rgba(0, 0, 0, 0.25)
+;
+}
+.Mapa{
+    width: 100%;
+    height: 498px;
+}
+.Pesquisa{
+    grid-area: 1 / 4 / 6 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
