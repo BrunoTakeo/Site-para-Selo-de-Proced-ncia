@@ -1,0 +1,13 @@
+.gif{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+}
+.Texto{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    font-family: 'Roboto',Arial,sans-serif;
+}
