@@ -1,0 +1,205 @@
+:root{
+    --cor_de_fundo:#a1a1a1;
+    --cor_logo:#c9c9c9;
+    --cor_de_fundo__transparente: rgba(255, 255, 255, 0.8);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100vw;
+  overflow-x: hidden;
+}
+
+header, nav, main, aside, footer {
+   display: flex;
+   background: var(--cor_de_fundo);
+   margin: 3px;
+}
+
+header{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100vw;
+  height: 100px;
+}
+
+header #logo {
+  flex: 0 1 200px;
+  background: var(--cor_logo);
+}
+#logo img{
+	margin-top: 5px;
+	margin-left: 25px;
+	width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+#openMenu, #closeMenu {
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	/* (superior, direito, inferior e esquerdo) */
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav{
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+}
+
+nav a {
+  margin: 0 3%;
+  font-size: 1.5rem;
+}
+
+main{
+  flex-grow: 20;
+  flex-shrink: 1;
+  flex-basis: 500px;
+}
+
+aside{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+}
+
+footer{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+
+@media only screen and (max-width: 717px){
+  #openMenu, #closeMenu {
+		/* Retorna a visibilidade padrão. */
+		display: block;
+	}
+
+	#openMenu {
+		/* Espaço a esquerda será preenchido automaticamente
+		   colocando os itens a direita. */
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Dispõe o elemento a 15px da esquerda. */
+		right: 15px;
+
+		/* Dispõe o elemento a 15px do topo. */
+		top: 15px;
+	}
+
+	nav {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Ocupa 100% da largura da tela de exibição. */
+		width: 100vw;
+
+		/* Ocupa 100% da altura da tela de exibição. */
+		height: 100vh;
+
+		/* Cor em RGB, mais transparência. */
+		background: var(--cor_de_fundo__transparente);
+
+		/* Dispõe os itens em coluna. */
+		flex-direction: column;
+
+		/* Alinha os itens na horizontal. */
+		align-items: center;
+
+		/* Alinha os itens na vertical. */
+		justify-content: center;
+
+		/* Remove a margem externa de todos os lados do elemento. */
+		margin: 0;
+
+		/* Oculta o elemento. */
+		display: none;
+
+		/* Invisivel */
+		opacity: 0;
+
+		/* Velocidade de transição de um estado para outro. */
+		transition: 0.3s;
+	}
+
+	nav a {
+		/* Margem de todos os lados. */
+		margin: 3%;
+	}
+	.Images_Conteudo,
+	.Sapatos{
+		display: none;
+	}
+	.Historia{
+		text-align: center;
+		margin-left: 0;
+	}
+}
+.Texto{
+    font-size: 30px;
+    text-align: center;
+    padding: 25px;
+	margin: 0 35%;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #ffffff;
+}
+.Conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8rem;
+}
+.Texto_Descricao{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 30px;
+    font-style: italic;
+}
+.Historia{
+    margin-left: 50px;
+    color: #ffffff;
+}
+.Images_Conteudo{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    width: 360;
+    height: 360;
+}
+.Sapatos{
+    margin-left: 200px;
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    opacity: 0.2;
+}

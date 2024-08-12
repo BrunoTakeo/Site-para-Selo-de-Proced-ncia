@@ -1,0 +1,13 @@
+footer{
+    background-color: #b79de1;
+}
+#Rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 6% 25px 8%;
+    align-items: center;
+}
+#Direitos_Autorais{
+    color: #000000;
+    font-weight: 500;
+}
