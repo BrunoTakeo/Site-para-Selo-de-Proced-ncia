@@ -4,43 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-
-    <title>Templates</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>Empresas</title>
 </head>
 <body>
     <header>
+        <a href="#" id="logo"><img src="../Img/SINBI - SELO DE PROCEDENCIA - SELO PRINCIPAL.png"></a>
 
-        <a href="#" id="logo">
-            <img src="../Img/SINBI - SELO DE PROCEDENCIA - SELO PRINCIPAL.png">
-        </a>
-        
         <button id="openMenu">&#9776;</button>
 
         <nav id="menu">
             <button id="closeMenu">X</button>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="/BrunoTakeo/Index.html">Localizações</a>
-            <a href="">Contact</a>
+            <a href="#">Inicial</a>
+            <a href="#">Sobre</a>
+            <a href="#">Empresas</a>
+            <a href="">Contato</a>
         </nav>
-        
+
     </header>
     
     <main>
-        <h1 class="Texto">Birigui <br><br>Capital do Calçado Infantil!</h1>
-    </main>
-    <aside>
-        <div class="Conteudo">
-            <img src="/BrunoTakeo/Img/images.jpeg" class="Images_Conteudo">
-            <div class="Historia">
-                <img class="Sapatos" src="/BrunoTakeo/Img/Shoes.png">
-                <h3>BIRIGUI</h3>
-                <Span class="Texto_Descricao">Birigui teve suas origens com a chegada de migrantes no século XIX e se desenvolveu com a chegada da Estrada de Ferro Noroeste do Brasil em 1908. A partir da década de 1950, a cidade se destacou na indústria calçadista, tornando-se a "Capital Nacional do Calçado Infantil". Atualmente, é reconhecida pela qualidade de seus produtos e pela diversificação econômica, com destaque na produção de calçados, confecções e acessórios.
-                </Span>
-            </div>
+        <div id="map">
+
         </div>
-    </aside>
-    <footer>Copyright &copy; 2024 IFSP - Campus São Birigui Todos Direitos Reservados</footer>
-    <script type="text/javascript" src="./js/script.js"></script> 
+    </main>
+    <aside>Relacionado</aside>
+    <footer>Rodapé</footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="" type="text/javascript" ></script> 
+    <script src="./js/script.js"></script>
 </body>
 </html>

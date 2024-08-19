@@ -13,7 +13,7 @@ header{
 }
 .Barra {
     display: flex;
-    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -69,9 +69,13 @@ nav a:nth-child(4):hover~span{
 .hamburger{
     display: none;
 }
+.Mobile_Conteudo{
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
     nav{
+        padding: 1.5rem 4rem;
         display: none;
         opacity: 0;
     }
@@ -105,5 +109,17 @@ nav a:nth-child(4):hover~span{
         stroke-dashoffset: -32.42;
         stroke-dasharray: 20 300;
     }
+    .Mobile_Conteudo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .Mobile_Conteudo .Mobile_Op{
+        display: block;
+        padding: 1.2rem;
+    }
+    .open{
+        display: block;
+    }
 }
-

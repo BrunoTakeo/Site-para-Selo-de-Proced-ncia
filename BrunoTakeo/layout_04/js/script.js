@@ -44,3 +44,10 @@ closeMenu.addEventListener('click', () => {
 		openMenu.removeAttribute('style')
 	}, 200);
 })
+
+var map = L.map(map).setView([-21.2892,-50.3411],16);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);

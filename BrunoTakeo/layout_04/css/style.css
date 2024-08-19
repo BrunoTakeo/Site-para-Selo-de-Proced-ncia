@@ -17,7 +17,6 @@ body{
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 100vw;
-  overflow-x: hidden;
 }
 
 header, nav, main, aside, footer {
@@ -36,13 +35,6 @@ header{
 header #logo {
   flex: 0 1 200px;
   background: var(--cor_logo);
-}
-#logo img{
-	margin-top: 5px;
-	margin-left: 25px;
-	width: 90px;
-    height: 90px;
-    border-radius: 10px;
 }
 
 #openMenu, #closeMenu {
@@ -155,51 +147,16 @@ a {
 		/* Margem de todos os lados. */
 		margin: 3%;
 	}
-	.Images_Conteudo,
-	.Sapatos{
-		display: none;
-	}
-	.Historia{
-		text-align: center;
-		margin-left: 0;
-	}
 }
-.Texto{
-    font-size: 30px;
-    text-align: center;
-    padding: 25px;
-	margin: 0 35%;
-    font-family: 'Roboto',Arial,sans-serif;
-    color: #ffffff;
+
+#logo img{
+	margin-top: 5px;
+	margin-left: 25px;
+	width: 90px;
+    height: 90px;
+    border-radius: 10px;
 }
-.Conteudo{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 8rem;
-}
-.Texto_Descricao{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
-}
-h3{
-    font-size: 30px;
-    font-style: italic;
-}
-.Historia{
-    margin-left: 50px;
-    color: #ffffff;
-}
-.Images_Conteudo{
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    width: 360;
-    height: 360;
-}
-.Sapatos{
-    margin-left: 200px;
-    width: 360px;
-    height: 360px;
-    position: absolute;
-    opacity: 0.2;
+
+#map{
+	height: 400px;
 }
