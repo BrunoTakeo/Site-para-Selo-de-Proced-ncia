@@ -1,0 +1,28 @@
+
+footer {
+    background-color: #4d2e7f;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #ff40bf; /* Muda a cor ao passar o mouse */
+  }
+  
+  footer p{
+    color: #fff;
+  }
+  
