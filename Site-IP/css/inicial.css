@@ -7,13 +7,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+body{
   background: #f1f1f1;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("img/background_sapatos.png");
-  background-repeat: no-repeat;
+  background-image: url('img/background_sapatos.png');
+  background-size: cover;
+  
 }
 
 .logo {
