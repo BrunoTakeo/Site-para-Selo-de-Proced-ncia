@@ -7,13 +7,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background: #f1f1f1;
+body{
+  background: #f1f1f1 url("img/background.png");
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("img/background_sapatos.png");
-  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .logo {
@@ -269,6 +269,7 @@ nav input {
   background-color: #f1f1f1;
   border-radius: 10px;
   overflow: hidden;
+
 }
 
 .text-content {
