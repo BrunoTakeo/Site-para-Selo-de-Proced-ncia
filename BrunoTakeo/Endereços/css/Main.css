@@ -5,25 +5,3 @@
 .Desligado{
   display: none;
 }
-
-#Pagina{
-  display: flex;
-  flex-direction:row;
-}
-
-#AreaPro{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-}
-
-#AreaPro .Procurar{
-  max-width: 200px;
-  padding: 6px;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
-  outline: none;
-  color: dimgray;
-}
