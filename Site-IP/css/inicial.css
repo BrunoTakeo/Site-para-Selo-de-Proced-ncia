@@ -260,6 +260,36 @@ nav input {
   }
 }
 
+.mais_info {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha abaixo se necessário */
+  justify-content: center;
+  gap: 10px; /* Espaço entre as imagens */
+  padding: 10px;
+}
+
+.pdf-link {
+  display: block;
+  text-decoration: none;
+  width: 100%; /* Ajusta a largura para 100% do contêiner pai */
+  max-width: 300px; /* Define um tamanho máximo para as imagens */
+  box-sizing: border-box;
+}
+
+.pdf-link img {
+  width: 100%; /* Faz com que a imagem ocupe 100% da largura do link */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço extra abaixo da imagem */
+}
+
+/* Media Query para ajustar a imagem em dispositivos menores */
+@media (max-width: 600px) {
+  .pdf-link {
+      max-width: 100%; /* Faz com que o link ocupe 100% da largura do contêiner em telas pequenas */
+  }
+}
+
+
 .carousel-container {
   position: relative;
   max-width: 100%;
