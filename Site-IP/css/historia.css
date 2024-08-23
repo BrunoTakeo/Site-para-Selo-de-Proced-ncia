@@ -185,9 +185,9 @@ h1{
 
 .image-content img {
   max-width: 40%;
-  height: 250px;
-  width: 250px;
-  padding-left: 55px;
+  height: 280px;
+  width: 280px;
+  padding-left: 20px;
 }
 
 /* Ajuste para dispositivos menores */
