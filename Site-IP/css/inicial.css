@@ -315,9 +315,6 @@ nav input {
       max-width: 100%; /* Faz com que o link ocupe 100% da largura do contêiner em telas pequenas */
   }
 }
-
-
-
 .carousel-container {
   position: relative;
   max-width: 100%;
@@ -349,6 +346,12 @@ nav input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.0); /* Aumenta o tamanho em 10% */
+  z-index: 1; /* Eleva o item acima dos outros para evitar sobreposição */
 }
 
 .carousel-item img {
@@ -356,6 +359,11 @@ nav input {
   height: auto;
   border-radius: 50%;
   object-fit: cover;
+  transition: transform 0.3s ease; /* Suaviza a transição do zoom */
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05); /* Zoom leve na imagem para um efeito mais visual */
 }
 
 .carousel-item p {
@@ -403,6 +411,7 @@ button.next {
     font-size: 12px;
   }
 }
+
 
 footer {
   background-color: #4d2e7f;
