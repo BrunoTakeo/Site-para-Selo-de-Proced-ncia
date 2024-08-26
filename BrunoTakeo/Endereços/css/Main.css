@@ -42,6 +42,17 @@
   display: none;
 }
 span{
-  text-align:center;
+  margin: 30px;
+  text-align:justify;
   color: #fff;
+}
+#Map{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.Enderecos{
+  text-transform: uppercase;
+  text-decoration: overline;
 }
