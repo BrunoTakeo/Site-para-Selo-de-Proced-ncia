@@ -108,7 +108,7 @@ nav .wrapper {
     max-width: 350px;
     top: 0;
     right: 0;
-    background: #543489;
+    background: #2d143f;
     padding: 50px 10px;
     line-height: 50px;
     overflow-y: auto;
@@ -414,7 +414,7 @@ button.next {
 
 
 footer {
-  background-color: #4d2e7f;
+  background-color: #2d143f;
   padding: 20px 0;
   text-align: center;
 }
