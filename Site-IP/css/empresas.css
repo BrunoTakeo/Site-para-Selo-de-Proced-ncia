@@ -17,7 +17,7 @@ body {
 }
 nav {
   width: 100%;
-  background: #4d2e7f;
+  background: #2d143f;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -55,11 +55,11 @@ nav .wrapper {
 }
 
 .nav-links li a:hover {
-  background: #543489;
+  background: #3f1c57;
 }
 
 .nav-links li a.active {
-  background: #5d4583;
+  background: #53306c;
   font-weight: 700;
   color: #fff;
   border-bottom: 3px solid #fff; /* Barrinha embaixo do link ativo */
@@ -163,7 +163,7 @@ nav input {
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
-  background: #5d4583;
+  background: #53306c;
 }
 .Infor{
   display: flex;
@@ -213,7 +213,7 @@ span{
 }
 
 footer {
-  background-color: #4d2e7f;
+  background-color: #2d143f;
   padding: 20px 0;
   text-align: center;
 }
